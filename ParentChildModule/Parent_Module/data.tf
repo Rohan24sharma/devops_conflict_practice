@@ -4,6 +4,7 @@ data "azurerm_subnet" "datasubnet" {
   resource_group_name  = "rg-rohan"
 }
 
+
 data "azurerm_public_ip" "datapip" {
   name                = "pip-rohan"
   resource_group_name = "rg-rohan"
