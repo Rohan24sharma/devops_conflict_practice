@@ -37,7 +37,7 @@ resource "azurerm_public_ip" "pip" {
 
 
 resource "azurerm_network_interface" "nic" {
-  depends_on = [ azurerm_resource_group.rg,azurerm_virtual_network.vnet,azurerm_subnet.subnet,azurerm_public_ip.pip ]
+  depends_on          = [azurerm_resource_group.rg, azurerm_virtual_network.vnet, azurerm_subnet.subnet, azurerm_public_ip.pip]
   name                = "nic-rohan"
   location            = "central india"
   resource_group_name = "rg-rohan"
